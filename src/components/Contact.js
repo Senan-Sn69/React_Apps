@@ -3,12 +3,16 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className="contact-page-wrapper">
-      <h1 className="primary-heading">GET IN TOUCH</h1>
+      <h2 className="secondary-heading">GET IN TOUCH</h2>
       <div className="contact-form-container">
         <input type="text" placeholder="Full Name" />
+      </div>
+      <div className="contact-form-container">
         <input type="text" placeholder="Email" />
+      </div>
+      <div className="contact-form-container">
         <input type="text" placeholder="Subject" />
-        <button className="secondary-button">Submit</button>
+        <button className="secondary-button">SUBMIT</button>
       </div>
     </div>
   )

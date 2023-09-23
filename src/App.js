@@ -5,6 +5,7 @@ import Benefits from './components/Benefits';
 import How from './components/How';
 import Technology from './components/Technology';
 import Blog from './components/Blog';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <How/>
       <Technology/>
       <Blog/>
+      <Contact/>
       
     </div>
   );

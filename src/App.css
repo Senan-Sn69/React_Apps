@@ -468,10 +468,10 @@ nav {
 
 .image-container {
   display: flex;
-  justify-content: center; /* Horizontally center items */
-  align-items: center; /* Vertically center items */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .center-image {
-  margin: 0 60px; /* Add margin to separate the images if needed */
+  margin: 0 60px; 
 }
