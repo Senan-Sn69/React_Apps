@@ -6,6 +6,7 @@ import How from './components/How';
 import Technology from './components/Technology';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Technology/>
       <Blog/>
       <Contact/>
+      <Footer/>
       
     </div>
   );

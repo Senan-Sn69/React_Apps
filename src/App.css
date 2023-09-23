@@ -103,7 +103,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #040D12;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -121,7 +121,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: #4477CE;
 }
 .about-section-container {
   margin-top: 20rem;
@@ -353,6 +353,7 @@ nav {
 .blog-section-wrapper {
   margin-top: 5rem;
   background-color: #DAC0A3;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 1000px) {
