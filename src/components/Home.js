@@ -1,11 +1,9 @@
 import React from 'react'
 import BannerBackground from "../Assets/home-banner-background.png";
-import Logo from "../Assets/Logo.svg";
 
 const Home = () => {
   return (
     <div className='home-container' id='home'>
-  
         <div className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
