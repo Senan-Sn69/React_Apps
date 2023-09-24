@@ -1,4 +1,6 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import HashLoader from 'react-spinners/HashLoader';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Why from './components/Why';
@@ -13,23 +15,40 @@ import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 
 function App() {
+const [loading, setLoading] = useState(false)
+useEffect(()=>{
+setLoading(true)
+setTimeout(()=>{
+  setLoading(false)
+
+},5000)
+
+},[])
+
 const top = () => {
   window.scrollTo(0,0);
 }
 
   return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Why/>
-      <Benefits/>
-      <How/>
-      <Technology/>
-      <Blog/>
-      <Contact/>
-      <Footer/>
-      <BsFillArrowUpCircleFill onClick={top} className='topbtn'/>
+    <div className="loading">
+      {
+      loading ?
+        <HashLoader color={'#36a5d6'} loading={loading} size={150} />
+        :
+        <div className="App">
+          <Navbar/>
+          <Home/>
+          <About/>
+          <Why/>
+          <Benefits/>
+          <How/>
+          <Technology/>
+          <Blog/>
+          <Contact/>
+          <Footer/>
+          <BsFillArrowUpCircleFill onClick={top} className='topbtn'/>
+          </div>
+      }
     </div>
   );
 }
