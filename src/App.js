@@ -6,12 +6,14 @@ import How from './components/How';
 import Technology from './components/Technology';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-import { Footer } from './components/Footer';
+import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
     <div className="App">
       <Home/>
+      <About/>
       <Why/>
       <Benefits/>
       <How/>
