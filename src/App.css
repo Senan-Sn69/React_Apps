@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Reem Kufi", sans-serif !important;
 }
 img {
@@ -217,9 +218,9 @@ nav {
   margin-right: 1.25rem;
   color: #585858;
 }
-/* .footer-section-one {
-  border: 2px solid blue;
-} */
+.footer-section-one {
+  margin-left: -5rem;
+}
 .footer-section-two {
   flex: 1;
   display: flex;
@@ -494,4 +495,19 @@ nav {
 
 .center-image {
   margin: 0 60px; 
+}
+
+.topbtn {
+  position: absolute;
+  right: 0;
+  margin-top: -5rem;
+  margin-right: 5rem;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -9,9 +9,14 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 
 function App() {
+const top = () => {
+  window.scrollTo(0,0);
+}
+
   return (
     <div className="App">
       <Navbar/>
@@ -24,6 +29,7 @@ function App() {
       <Blog/>
       <Contact/>
       <Footer/>
+      <BsFillArrowUpCircleFill onClick={top} className='topbtn'/>
     </div>
   );
 }

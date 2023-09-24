@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { HiOutlineBars3 } from "react-icons/hi2";
+import React from 'react'
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import Logo from "../Assets/Logo.svg";
 
 
 const Navbar = () => {
-    const [openNav, setOpenNav] = useState(false);
-
+    
   return (
     <BrowserRouter>
     <nav>
@@ -25,9 +23,6 @@ const Navbar = () => {
         <Link smooth to='#technology'>Technology</Link>
         <Link smooth to='#blog'>Blog</Link>
         <Link smooth to='#contact'>Contact</Link>
-      </div>
-      <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenNav(true)} />
       </div>
       </nav>
       </BrowserRouter>
