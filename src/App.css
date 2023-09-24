@@ -8,6 +8,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.image-logo-container {
+  max-width: 95px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+}
 .App {
   min-height: 100vh;
   width: 85vw;
@@ -17,6 +23,7 @@ img {
 body {
   max-width: 100%;
   overflow-x: hidden;
+  padding-top: 90px;
 }
 
 body {
@@ -25,6 +32,13 @@ body {
 
 nav {
   display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #A2678A;
+  backface-visibility: hidden;
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
@@ -38,6 +52,11 @@ nav {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+}
+.navbar-links-container :hover {
+  background-color: #4477CE;
+  border-radius: 20%;
+  padding: 5px;
 }
 .primary-button {
   padding: 0.9rem 1.75rem;

@@ -1,72 +1,33 @@
 import React, { useState } from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import Logo from "../Assets/Logo.svg";
 
 
 const Navbar = () => {
-    const [openMenu, setOpenMenu] = useState(false);
-  const navOptions = [
-    {
-      text: "Home",
-      icon: <HomeIcon />,
-    },
-    {
-      text: "About",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "Why",
-      icon: <CommentRoundedIcon />,
-    },
-    {
-        text: "Benefits",
-        icon: <CommentRoundedIcon />,
-    },
-    {
-        text: "How it Works",
-        icon: <CommentRoundedIcon />,
-    },
-    {
-        text: "Technology",
-        icon: <PhoneRoundedIcon />,
-    },
-    {
-        text: "Our Work",
-        icon: <CommentRoundedIcon />,
-    },
-    {
-        text: "Blog",
-        icon: <PhoneRoundedIcon />,
-    },
-    {
-      text: "Contact",
-      icon: <PhoneRoundedIcon />,
-    },
-  ];
+    const [openNav, setOpenNav] = useState(false);
 
   return (
     <BrowserRouter>
     <nav>
       <div className="nav-logo-container">
-        
       </div>
+      <div className="image-logo-container">
+          <img src={Logo} alt="" />
+        </div>
       <div className="navbar-links-container">
-        <Link to='#home'>Home</Link>
-        <Link to='#about'>About</Link>
-        <Link to='#why'>Why</Link>
-        <Link to='#benefits'>Benefits</Link>
-        <Link to='#how'>How it Works</Link>
-        <Link to='#technology'>Technology</Link>
-        <Link to='#blog'>Blog</Link>
-        <Link to='#contact'>Contact</Link>
+        <Link smooth to='#home'>Home</Link>
+        <Link smooth to='#about'>About</Link>
+        <Link smooth to='#why'>Why</Link>
+        <Link smooth to='#benefits'>Benefits</Link>
+        <Link smooth to='#how'>How it Works</Link>
+        <Link smooth to='#technology'>Technology</Link>
+        <Link smooth to='#blog'>Blog</Link>
+        <Link smooth to='#contact'>Contact</Link>
       </div>
       <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        <HiOutlineBars3 onClick={() => setOpenNav(true)} />
       </div>
       </nav>
       </BrowserRouter>
