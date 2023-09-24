@@ -1,19 +1,11 @@
 import React, { useState } from "react";
-import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import {
-Box,
-Drawer,
-ListItem,
-ListItemButton,
-ListItemIcon,
-ListItemText,
-} from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -58,25 +50,26 @@ const Navbar = () => {
   ];
 
   return (
+    <BrowserRouter>
     <nav>
       <div className="nav-logo-container">
         
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Why</a>
-        <a href="">Benefits</a>
-        <a href="">How it Works</a>
-        <a href="">Technology</a>
-        <a href="">Our Work</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
+        <Link to='#home'>Home</Link>
+        <Link to='#about'>About</Link>
+        <Link to='#why'>Why</Link>
+        <Link to='#benefits'>Benefits</Link>
+        <Link to='#how'>How it Works</Link>
+        <Link to='#technology'>Technology</Link>
+        <Link to='#blog'>Blog</Link>
+        <Link to='#contact'>Contact</Link>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
       </nav>
+      </BrowserRouter>
   )
 }
 

@@ -3,7 +3,7 @@ import Toyota from "../Assets/toyota.jpg";
 
 const How = () => {
   return (
-    <div className="how-section-wrapper">
+    <div className="how-section-wrapper" id='how'>
       <div className="how-section-top">
         <h1 className="primary-heading">HOW IT WORKS</h1>
         <p className="primary-text">

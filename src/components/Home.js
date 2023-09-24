@@ -5,7 +5,7 @@ import Logo from "../Assets/Logo.svg";
 
 const Home = () => {
   return (
-    <div className='home-container'>
+    <div className='home-container' id='home'>
         <Navbar/> 
         <div className="footer-logo-container">
           <img src={Logo} alt="" />

@@ -36,7 +36,7 @@ const Technology = () => {
       ];
 
   return (
-    <div className="tech-section-wrapper">
+    <div className="tech-section-wrapper" id='technology'>
     <div className="tech-section-top">
       <h1 className="primary-heading">TECHNOLOGIES</h1>
       <p className="primary-text">

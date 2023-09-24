@@ -40,7 +40,7 @@ const Why = () => {
           },
       ];
   return (
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper" id='why'>
       <div className="work-section-top">
         <h1 className="primary-heading">WHAT WE OFFER</h1>
         <p className="primary-text">

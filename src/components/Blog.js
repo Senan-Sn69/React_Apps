@@ -4,7 +4,7 @@ import Lap from "../Assets/lap.png";
 const Blog = () => {
 
   return (
-    <div className="blog-section-wrapper">
+    <div className="blog-section-wrapper" id='blog'>
         <div className="work-section-top">
         <h1 className="primary-heading">BLOG</h1>
         </div>

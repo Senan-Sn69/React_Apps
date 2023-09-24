@@ -2,7 +2,7 @@ import React from 'react'
 
 const Benefits = () => {
   return (
-    <div className="benefits-section-wrapper">
+    <div className="benefits-section-wrapper" id='benefits'>
       <div className="benefits-section-top">
         <h1 className="primary-heading">TAKE MORE WITH US</h1>
         <p className="primary-text">
