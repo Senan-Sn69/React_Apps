@@ -372,6 +372,17 @@ nav {
   border-radius: 100%;
   cursor: pointer;
 }
+.arrows {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  left: 3rem;
+}
+.arrows>img {
+  width: 1.5rem;
+  cursor: pointer;
+  background-color: #000000;
+}
 
 ::-webkit-scrollbar {
   display: none;

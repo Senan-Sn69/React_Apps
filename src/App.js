@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import Partners from './components/Partners';
 
 
 function App() {
@@ -43,6 +44,7 @@ const top = () => {
           <Benefits/>
           <How/>
           <Technology/>
+          <Partners/>
           <Blog/>
           <Contact/>
           <Footer/>
